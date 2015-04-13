@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GeoTracker Term of Use"
-        android:paddingTop="30px"
+        android:paddingTop="29px"
         android:paddingLeft="50px"
         />
 
