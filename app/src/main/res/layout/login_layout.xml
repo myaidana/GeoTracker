@@ -15,20 +15,17 @@
         android:layout_gravity="top"
         tools:context=".LinearLayout" >
 
-        <Button
-            android:text="Log out"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Account"
+            android:text="Login"
             android:paddingTop="40px"
             android:paddingLeft="150px"
             />
 
+
+
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -37,21 +34,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
-        android:paddingTop="80px"
+        android:paddingLeft="90px"
+        android:paddingTop="100px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Username"
             android:padding="20px"/>
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Your Name"
+            android:hint="Enter Username"
             android:inputType="textEmailAddress" />
 
 
@@ -63,94 +60,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
+        android:paddingLeft="50px"
 
-        tools:context=".LinearLayout" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:padding="20px"/>
-
-        <EditText
-            android:id="@+id/useremail"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Your Email"
-            android:inputType="textEmailAddress" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity= "center"
-        android:paddingLeft="170px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
-            android:padding="10px"/>
+            android:padding="20px"/>
+
         <EditText
-            android:id="@+id/userpassword"
+            android:id="@+id/password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Your Password"
-            android:inputType="textEmailAddress" />
-
-
-    </LinearLayout>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity= "center"
-        android:paddingLeft="75px"
-        tools:context=".LinearLayout" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Security Question"
-            android:padding="10px"/>
-        <EditText
-            android:id="@+id/usersecurityquestion"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Security Question"
-            android:inputType="textEmailAddress" />
-
-
-    </LinearLayout>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity= "center"
-        android:paddingLeft="75px"
-        tools:context=".LinearLayout" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Security Answer"
-            android:padding="10px"/>
-        <EditText
-            android:id="@+id/usersecurityanswer"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Answer"
+            android:hint="Enter Password"
             android:inputType="textEmailAddress" />
 
 
@@ -163,15 +87,60 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="300px"
-        android:paddingTop="80px"
+        android:paddingLeft="400px"
+        android:paddingTop="70px"
         tools:context=".LinearLayout" >
 
         <Button
-            android:id="@+id/saveuser"
-            android:text="Save changes"
+            android:id="@+id/loginbutton"
+            android:text="Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity= "center"
+        android:paddingLeft="300px"
+        android:paddingTop="70px"
+        tools:context=".LinearLayout" >
+
+        <Button
+            android:id="@+id/createaccountbutton"
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity= "center"
+        android:paddingLeft="300px"
+        android:paddingTop="70px"
+        tools:context=".LinearLayout" >
+
+        <Button
+            android:id="@+id/forgotpasswordbutton"
+            android:text="Forgot Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
 
 

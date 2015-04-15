@@ -15,19 +15,39 @@
         android:layout_gravity="top"
         tools:context=".LinearLayout" >
 
-        <Button
-            android:text="Back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset Password"
+            android:text="Security Question"
             android:paddingTop="40px"
             android:paddingLeft="150px"
             />
 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity= "center"
+        android:paddingLeft="200px"
+        android:paddingTop="80px"
+        tools:context=".LinearLayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:padding="20px"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20px"/>
+
 
 
     </LinearLayout>
@@ -38,46 +58,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="90px"
-        android:paddingTop="100px"
-        tools:context=".LinearLayout" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Password"
-            android:padding="20px"/>
-
-        <EditText
-            android:id="@+id/newpassword"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter New Password"
-            android:inputType="textEmailAddress" />
-
-
-    </LinearLayout>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity= "center"
-        android:paddingLeft="50px"
+        android:paddingLeft="200px"
 
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Re-enter Password"
+            android:text="Answer"
             android:padding="20px"/>
 
         <EditText
+            android:id="@+id/answer"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
+            android:hint="Enter Your Answer"
             android:inputType="textEmailAddress" />
 
 
@@ -91,14 +86,15 @@
         android:orientation="vertical"
         android:gravity= "center"
         android:paddingLeft="300px"
-        android:paddingTop="70px"
+        android:paddingTop="80px"
         tools:context=".LinearLayout" >
 
         <Button
-            android:id="@+id/savenewpassword"
-            android:text="Save"
+            android:id="@+id/submitanswer"
+            android:text="Submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
 
 
 

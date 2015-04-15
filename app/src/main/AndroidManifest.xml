@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CreateAccountActivity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/account_activity" >
+        </activity>
+        <activity
+            android:name=".NewPasswordActivity"
+            android:label="@string/reset_password_activity" >
+        </activity>
+        <activity
+            android:name=".SecurityQuestionActivity"
+            android:label="@string/security_question_activity" >
+        </activity>
     </application>
 
 </manifest>
