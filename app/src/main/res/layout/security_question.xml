@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="clip_vertical"
+    android:gravity="fill_vertical"
+    android:background="#D6EBFF"
     tools:context=".LinearLayout" >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="fill_vertical"
+        android:gravity="center"
         android:layout_gravity="top"
         tools:context=".LinearLayout" >
 
@@ -20,8 +21,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Security Question"
+            android:textSize="50px"
+            android:textStyle="bold"
             android:paddingTop="40px"
-            android:paddingLeft="150px"
+            android:paddingLeft="75px"
             />
 
     </LinearLayout>
@@ -40,12 +43,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question"
+            android:textSize="50px"
+            android:textStyle="bold"
             android:padding="20px"/>
 
         <TextView
             android:id="@+id/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:textStyle="bold"
             android:padding="20px"/>
 
 
@@ -66,6 +73,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Answer"
+            android:textSize="50px"
+            android:textStyle="bold"
             android:padding="20px"/>
 
         <EditText
@@ -73,6 +82,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Your Answer"
+            android:textSize="50px"
             android:inputType="textEmailAddress" />
 
 

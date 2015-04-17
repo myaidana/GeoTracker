@@ -7,4 +7,5 @@
     <string name="account_activity">AccountActivity</string>
     <string name="reset_password_activity">ResetPasswordActivity</string>\
     <string name="security_question_activity">SecurityQuestionActivity</string>
+    <string name="my_profile_activity">MyProfileActivity</string>
 </resources>

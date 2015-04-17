@@ -9,6 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".GeoActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,20 +19,30 @@
         </activity>
         <activity
             android:name=".CreateAccountActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_create_account" >
         </activity>
         <activity
             android:name=".AccountActivity"
+            android:screenOrientation="portrait"
             android:label="@string/account_activity" >
         </activity>
         <activity
             android:name=".NewPasswordActivity"
+            android:screenOrientation="portrait"
             android:label="@string/reset_password_activity" >
         </activity>
         <activity
             android:name=".SecurityQuestionActivity"
+            android:screenOrientation="portrait"
             android:label="@string/security_question_activity" >
         </activity>
+        <activity
+            android:name=".MyProfileActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/my_profile_activity" >
+        </activity>
+
     </application>
 
 </manifest>
