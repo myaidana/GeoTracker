@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#D6EBFF"
+    android:layout_width="fill_parent"
+    android:background="@drawable/road1"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:gravity="clip_vertical"
+    android:gravity="center_horizontal|top"
     tools:context=".LinearLayout"
     >
 
@@ -14,16 +14,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="fill_vertical"
-        android:layout_gravity="top"
+        android:layout_gravity="center_horizontal|top"
         tools:context=".LinearLayout" >
-
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:textColor="#ffffff"
+            android:text="Welcome to GeoTracker"
             android:paddingTop="40px"
-            android:paddingLeft="150px"
             />
 
 
@@ -36,18 +35,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="90px"
-        android:paddingTop="100px"
+        android:paddingTop="10px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Username"
+            android:textColor="#ffffff"
             android:padding="20px"/>
 
         <EditText
             android:id="@+id/name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Username"
@@ -62,7 +63,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="50px"
 
         tools:context=".LinearLayout" >
 
@@ -70,11 +70,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
+            android:textColor="#ffffff"
             android:padding="20px"/>
 
         <EditText
             android:id="@+id/password"
+            android:textColorHint="#ffffff"
             android:layout_width="fill_parent"
+            android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:hint="Enter Password"
             android:inputType="textEmailAddress" />
@@ -89,8 +92,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="400px"
-        android:paddingTop="70px"
         tools:context=".LinearLayout" >
 
         <Button
@@ -111,8 +112,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="300px"
-        android:paddingTop="70px"
         tools:context=".LinearLayout" >
 
         <Button
@@ -133,8 +132,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="300px"
-        android:paddingTop="70px"
         tools:context=".LinearLayout" >
 
         <Button

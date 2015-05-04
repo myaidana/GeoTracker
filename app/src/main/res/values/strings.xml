@@ -3,9 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_create_account">createAccountActivity</string>
+    <string name="title_activity_create_account">createAccountActivitywWebServices</string>
     <string name="account_activity">AccountActivity</string>
     <string name="reset_password_activity">ResetPasswordActivity</string>\
     <string name="security_question_activity">SecurityQuestionActivity</string>
     <string name="my_profile_activity">MyProfileActivity</string>
+    <string name="my_forgot_password_activity">LoginActivityWithWebServices</string>
 </resources>

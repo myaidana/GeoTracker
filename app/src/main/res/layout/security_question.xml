@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="fill_vertical"
-    android:background="#D6EBFF"
+    android:gravity="center_horizontal|top"
+    android:background="@drawable/road6"
     tools:context=".LinearLayout" >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -16,15 +16,22 @@
         android:layout_gravity="top"
         tools:context=".LinearLayout" >
 
+        <Button
+            android:id="@+id/secquestion_back"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Security Question"
-            android:textSize="50px"
+            android:textColor="#ffffff"
+            android:textSize="40px"
             android:textStyle="bold"
-            android:paddingTop="40px"
-            android:paddingLeft="75px"
+            android:paddingTop="10px"
+            android:paddingLeft="15px"
             />
 
     </LinearLayout>
@@ -35,15 +42,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
-        android:paddingTop="80px"
+        android:paddingTop="30px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
             android:text="Question"
-            android:textSize="50px"
+            android:textSize="40px"
             android:textStyle="bold"
             android:padding="20px"/>
 
@@ -51,7 +58,8 @@
             android:id="@+id/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="50px"
+            android:textSize="40px"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:padding="20px"/>
 
@@ -65,7 +73,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
 
         tools:context=".LinearLayout" >
 
@@ -73,7 +80,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Answer"
-            android:textSize="50px"
+            android:textSize="40px"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:padding="20px"/>
 
@@ -81,8 +89,10 @@
             android:id="@+id/answer"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
             android:hint="Enter Your Answer"
-            android:textSize="50px"
+            android:textColor="#ffffff"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
 
 
@@ -95,8 +105,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="300px"
-        android:paddingTop="80px"
+        android:paddingTop="50px"
         tools:context=".LinearLayout" >
 
         <Button

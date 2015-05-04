@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D6EBFF"
     android:orientation="vertical"
-    android:gravity="clip_vertical"
+    android:gravity="center_horizontal|top"
+    android:background="@drawable/road10"
     tools:context=".LinearLayout" >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="fill_vertical"
@@ -17,7 +17,8 @@
         tools:context=".LinearLayout" >
 
         <Button
-            android:text="Log out"
+            android:id="@+id/registration_back"
+            android:text="Back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -26,10 +27,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Registration"
-            android:textSize="70px"
+            android:textSize="40px"
             android:textStyle="bold"
-            android:paddingTop="40px"
-            android:paddingLeft="150px"
+            android:paddingTop="20px"
+            android:textColor="#ffffff"
             />
 
     </LinearLayout>
@@ -40,27 +41,27 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
-        android:paddingTop="80px"
+        android:paddingTop="2px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textSize="50px"
+            android:textSize="40px"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:padding="20px"/>
 
         <EditText
             android:id="@+id/username"
             android:layout_width="fill_parent"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:hint="Enter Your Name"
-            android:textSize="50px"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
-
-
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -69,24 +70,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="200px"
-
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textSize="50px"
+            android:textSize="40px"
             android:textStyle="bold"
+            android:textColor="#ffffff"
             android:padding="20px"/>
 
         <EditText
             android:id="@+id/useremail"
             android:layout_width="fill_parent"
+            android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:hint="Enter Your Email"
-            android:textSize="50px"
+            android:textColorHint="#ffffff"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
 
 
@@ -99,22 +101,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="170px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
-            android:textSize="50px"
+            android:textColor="#ffffff"
+            android:textSize="40px"
             android:textStyle="bold"
             android:padding="10px"/>
         <EditText
             android:id="@+id/userpassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
             android:hint="Enter Your Password"
-            android:textSize="50px"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
 
 
@@ -126,22 +130,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="75px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Security Question"
-            android:textSize="50px"
+            android:textSize="40px"
             android:textStyle="bold"
+            android:textColor="#ffffff"
             android:padding="10px"/>
         <EditText
             android:id="@+id/usersecurityquestion"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Security Question"
-            android:textSize="50px"
+            android:hint="Enter Question"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
 
 
@@ -153,14 +159,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity= "center"
-        android:paddingLeft="75px"
         tools:context=".LinearLayout" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Security Answer"
-            android:textSize="50px"
+            android:textSize="40px"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:padding="10px"/>
         <EditText
@@ -168,7 +174,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Answer"
-            android:textSize="50px"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="40px"
             android:inputType="textEmailAddress" />
 
 
@@ -181,17 +189,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity= "center"
-        android:paddingLeft="300px"
-        android:paddingTop="80px"
+        android:paddingTop="5px"
         tools:context=".LinearLayout" >
 
         <Button
-            android:id="@+id/saveuser"
-            android:text="Save changes"
+            android:id="@+id/terms"
+            android:text="Save Changes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <CheckBox
+            android:id="@+id/Agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree" />
 
+        <TextView
+            android:id="@+id/agreement_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="10px"/>
 
 
     </LinearLayout>
